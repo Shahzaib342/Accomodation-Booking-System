@@ -1,0 +1,136 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+	background-color: lightgrey;
+    padding: 16px 30px;
+}
+
+.navbar > div {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: auto;
+}
+
+.page-title{
+	text-align: center;
+}
+
+.navbar-btn{
+    float:right;
+}
+
+.navbar-btn >a {
+	margin-left: 10px;
+}
+
+a{
+  cursor: pointer;
+}
+
+.mainBody{
+  overflow-x: hidden;
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+  padding:16px;
+}
+
+
+.loginBut{
+  background: #bababa;
+  color : white;
+  padding : 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+.header{
+  margin : 32px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.hostsTitle, .customerTitle ,.itemsTitle{
+  position: relative;
+}
+
+
+.newBut{
+  position: absolute;
+  right : 10px;
+  top :20px;
+  background: #bababa;
+  color : white;
+  padding : 6px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+.tableContainer{
+  position: relative;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.table{
+  display: grid;
+  grid-template-columns: repeat(5,350px );
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5vh 2vw;
+  /* position: relative;
+  overflow-x: scroll; */
+  width : 1750px;
+}
+
+.image,.hosts,.customer,.reviews,.items{
+  position: relative;
+  height: 300px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid black;
+}
+
+.hosts,.customer,.reviews ,.items{
+  overflow-y: scroll;
+}
+
+.image img{
+  width: 100%;
+}
+
+.editBut{
+  background: #bababa;
+  color : white;
+  padding : 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.removeBut{
+  background: #ff5454;
+  color : white;
+  padding : 6px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+.buttonss{
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+
+}

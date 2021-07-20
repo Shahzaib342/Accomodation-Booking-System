@@ -1,0 +1,155 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+	background-color: lightgrey;
+    padding: 16px 30px;
+}
+
+.navbar > div {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: auto;
+}
+
+.page-title{
+	text-align: center;
+}
+
+.navbar-btn{
+    float:right;
+}
+
+.navbar-btn >a {
+	margin-left: 10px;
+}
+a{
+  cursor: pointer;
+}
+
+.mainBody{
+  overflow-x: hidden;
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+  padding:16px;
+}
+
+
+.loginBut{
+  background: #bababa;
+  color : white;
+  padding : 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+.header{
+  margin : 32px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+.tableContainer{
+  position: relative;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+
+.table{
+  display: grid;
+  grid-template-columns: 350px repeat(8,200px ) 350px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5vh 2vw;
+  /* position: relative;
+  overflow-x: scroll; */
+  width : 2300px;
+}
+
+.Image,.Price,.Rooms,.Bath,.Somking,.Garage,.Pet,.Internet,.Address,.Rating{
+  height: 300px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid black;
+}
+
+
+.Price,.Rooms,.Bath,.Somking,.Garage,.Pet,.Internet,.Address,.Rating{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.Image img{
+  width : 100%;
+}
+
+.editBut{
+  background: #bababa;
+  color : white;
+  padding : 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.removeBut{
+  background: #ff5454;
+  color : white;
+  padding : 6px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+.buttonss{
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+
+}
+.Address{
+  overflow-x: scroll;
+  padding-left: 10px;
+}
+.Price{
+    overflow-x: scroll;
+    padding-left: 10px;
+}
+.Rooms{
+  overflow-x: scroll;
+  padding-left: 10px;
+}
+.Bath{
+  overflow-x: scroll;
+  padding-left: 10px;
+}
+.Somking{
+  overflow-x: scroll;
+  padding-left: 10px;
+}
+.Garage{
+  overflow-x: scroll;
+  padding-left: 10px;
+}
+.Pet{
+  overflow-x: scroll;
+  padding-left: 10px;
+}
+.Internet{
+  overflow-x: scroll;
+  padding-left: 10px;
+}

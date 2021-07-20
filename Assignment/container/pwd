@@ -1,0 +1,21 @@
+vp@123AC -> KIK9havFtW8W2
+123
+Bz#3@Ak -> KIV0So8mSP3eg
+
+katieheo
+
+SELECT * FROM `accommodation` LEFT JOIN `bookings` 
+ON accommodation.id = bookings.accomID 
+AND ( 
+    (bookings.bookFrom <= '2021-05-12' AND bookings.bookTo >= '2021-05-12') 
+    OR (bookings.bookFrom >= '2021-05-12' AND bookings.bookFrom <= '2021-05-14') ) 
+WHERE `status` =! 'confirmed' && `status` =! 'pending' && `status` =! 'paid' && `accomLocation` = 'Hobart' && `availFrom` <= '2021-05-12' && `availTo` >= '2021-05-14' && `guests` >= 3
+
+SELECT * FROM `accommodation` LEFT JOIN `bookings` ON accommodation.id = bookings.accomID AND ( (bookings.bookFrom <= '2021-06-12' AND bookings.bookTo >= '2021-06-12') OR (bookings.bookFrom >= '2021-06-12' AND bookings.bookFrom <= '2021-06-14') ) WHERE 
+(bookings.bid IS NULL || `status`='cancelled')&& `accomLocation` = 'Hobart' && `availFrom` <= '2021-06-12' && `availTo` >= '2021-06-14' && `guests` >= 3
+
+
+SELECT * FROM bookings
+WHERE NOT bstatus='rejected'
+UNION
+SELECT bid, accomID,users,bookFrom,bookTo,bstatus,noofguests, totalprice, comments FROM failedbooking
